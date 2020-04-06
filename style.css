@@ -1,0 +1,271 @@
+/*
+Nathalie Pichon
+
+css du site sport.com
+*/
+body{
+	background: black;/*noir*/
+	color:white
+	}
+
+.container{
+	/*margin: 60px;
+	border: 2px solid;*/
+	text-align: center;
+}
+/*header*/
+header{
+	color: white;
+	text-align: center;
+	background: white;
+	height: 176px;
+}
+#logo img,p{
+	float: left;
+	display:block;
+	margin-right: 30px;
+	width:282px;
+	height:inherit;
+}
+#logo {
+	display:block;
+}
+/*menu du header*/
+input[type="text"]{
+	border: 1px solid #dbdbdb;
+    height: 40px;
+    width: 188px;
+    padding: 5px 45px 5px 15px;
+}
+
+.icon-mail{
+	background: url("img/icon-mon-compte.png");
+	background-repeat: no-repeat;
+	height: 35px;
+}
+.icon-mail placeholder{
+	position:right;
+}
+.icon-panier{
+	background: url("img/icon-mon-panier.png");
+	height: 35px;
+	background-repeat: no-repeat;
+}
+
+.menu-nav a{
+    color: black;
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-decoration-line: none;
+}
+.menu-nav ul{
+	padding: 10px;
+	list-style-type: none;
+	display: inline-block;
+	margin-right: 150px;
+}
+.menu-nav ul li{
+	float: left;
+	width: 150px;
+	padding: 10px;
+	position: relative;
+}
+.menu-nav ul li ul{
+	display: none;
+	margin: 0;
+	padding: 0;
+}
+.menu-nav ul li:hover ul{
+	display: block;
+	padding: 0;
+	position: absolute;
+	margin: 10px -10px;
+}
+.menu-nav ul li:hover {
+	border-bottom: 2px solid white;
+}
+.menu-nav ul li ul:hover li a {
+	color: #7878AB;
+}
+/*fin du menu du header*/
+/*partie regroupant les différents block de contenu */
+/*header-page-catalogue*/
+.headerPage{
+	width: 60%;
+    margin: auto;
+    background: black;
+    padding: 0px;
+	display: flex;
+    justify-content: center;
+}
+/*milieu*/
+.milieu{
+	width: 60%;
+    margin: auto;
+    background: white;
+    padding: 101px;
+    padding-top: 6px;
+    color: black;
+	display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+section{
+	display: flex; /*pour mettre tout sur une m ligne la section*/
+	flex-direction:row;/*par défaut*/
+	flex-direction:wrap;/*par mettre à la ligne*/
+	margin: 62px;
+}
+.item{
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid;
+	background: white;
+}
+.item .photo-marque img, .marque{
+	width: 100%;/*pour toute la lageur disponible*/
+}
+.marque{
+	font-weight: 600;
+    text-align: center;
+    margin: 5px;
+}
+.item:hover{
+	cursor: pointer;
+	transform:scale(1.2);
+	transition-duration: 2s;/*quand on passe sur la souris ça s'aggrandit */
+}
+.details{
+	margin: 20px;
+	color: #fff;
+	font-weight: 600;/*gras comme bold*/
+	font-size: 12px;
+}
+.details .vente{
+	padding: 10px;
+	color:white;
+	background: black;/*noir*/
+	float: left;
+}
+.details .prix{
+	padding: 10px;
+	border-radius: 5px;
+	border-color: grey;
+	background: white;
+	color:#ea9f05;/*orange*/
+	font-weight:800;
+	font-size: 20px;
+	float: right;
+}
+.details .prixBarre{
+	padding: 10px;
+	background: white;
+	color:black;
+	font-weight:700;
+	font-size: 20px;
+	float:center;
+	text-decoration:line-through;
+}
+/*menu du bas à déboguer*/
+.barre{
+	background: grey;
+	color: grey;
+	height: 15px;   
+	padding-top: 1px;
+}
+.barreBlanche{
+	width: 75%;
+	height: 15px;
+    margin: auto;
+    background: white;
+    padding-top: 40px;
+    color: black;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.barre-menu-nav{
+	width: 56%;
+	height: 15px;
+    margin: auto;
+    background: red;
+    padding-top: 15px;
+    margin-top: -125px;
+    color: black;
+}
+.barre-menu-nav a{
+	color: #fff;
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-decoration-line: none;
+}
+.barre-menu-nav ul{
+	padding: 10px;
+	list-style-type: none;
+	display: inline-block;
+	margin-right: 150px;
+}
+.barre-menu-nav ul li{
+	display: none;
+	margin: 0;
+	padding: 0;
+}
+.barre-menu-nav ul li:hover ul{
+	display: block;
+	padding: 0;
+	position: absolute;
+	margin: 10px -10px;
+}
+/*fin du menu du bas à déboguer*/
+/*footer*/
+footer{
+	color: white;
+	background: grey;
+	padding-top: 2px;
+	text-align: center;
+} 
+footer section{
+	justify-content: center;
+}
+footer img{
+	border-radius: 50%;
+	border: 1px solid;
+	width: 100px;
+	height: 100px;
+	background: white;
+}
+.socials{
+	text-align: center;
+}
+.socials img{
+	width: 60px;
+	height: 60px;
+	margin: 10px;
+}
+.socials img:hover{
+	background: #9ED4CD;
+	transform:scale(1.2);
+}
+footer section .footer-items{
+	display: inline-flex;/*sur la meme ligne bien aligné ça s'adapte à tous les écrans*/
+	text-align: center;
+}
+footer section .footer-item{
+	width: 200px;
+	padding: 10px;
+	margin: 10px;
+}	
+.copyright{
+	font-size: 10px;
+}
+section{
+	margin: 11px;
+}
+/*fin footer*/
